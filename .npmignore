@@ -1,0 +1,28 @@
+# Ignore source code (we only publish built files)
+src/
+
+# Ignore tests
+tests/
+__tests__/
+
+# Ignore configs
+tsconfig.json
+tsconfig.*.json
+*.config.js
+*.config.cjs
+*.config.mjs
+.eslintrc*
+.vitest.config.*
+
+# Ignore local dev files
+node_modules/
+dist/.cache
+.DS_Store
+*.log
+
+# Ignore example/demo folders
+examples/
+demo/
+
+# Ignore storybook (if ever added)
+storybook-static/
