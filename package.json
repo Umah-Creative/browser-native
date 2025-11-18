@@ -1,7 +1,7 @@
 {
   "name": "browser-native",
   "private": true,
-  "description": "",
+  "description": "A modular monorepo containing a core browser-native API toolkit and framework-agnostic wrappers. Fully typed, tree-shakeable, and optimized for modern web applications.",
   "workspaces": [
     "packages/*"
   ],
