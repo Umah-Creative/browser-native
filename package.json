@@ -2,9 +2,6 @@
   "name": "browser-native",
   "private": true,
   "description": "A modular monorepo containing a core browser-native API toolkit and framework-agnostic wrappers. Fully typed, tree-shakeable, and optimized for modern web applications.",
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "build": "pnpm -r run build",
     "dev": "pnpm -r run dev",
@@ -15,10 +12,14 @@
     "publish-packages": "changeset publish"
   },
   "devDependencies": {
-    "typescript": "^5.2.0",
-    "tsup": "^8.5.1",
     "@changesets/cli": "^2.29.7",
     "eslint": "^8.0.0",
-    "prettier": "^3.0.0"
-  }
+    "prettier": "^3.0.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.2.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
