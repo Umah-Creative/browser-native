@@ -1,0 +1,19 @@
+{
+  "name": "@umah-creative/browser-native-types",
+  "version": "0.0.0",
+  "description": "Shared TypeScript types for @umah-creative/browser-native packages.",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup src/index.ts --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.0",
+    "tsup": "^8.5.1"
+  },
+  "peerDependencies": {},
+  "dependencies": {}
+}
