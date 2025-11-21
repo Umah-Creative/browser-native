@@ -2,8 +2,7 @@ name: Deploy Docs
 
 on:
   push:
-    # branches: [main]
-    branches: [development]
+    branches: [main, development]
 
 permissions:
   contents: read
@@ -47,9 +46,6 @@ jobs:
         run: pnpm build
         working-directory: apps/docs
 
-      - name: Verify build output
-        run: ls -R apps/docs/.vitepress/dist
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -64,9 +60,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: List downloaded artifact contents
-        run: ls -R .
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # If on development branch, deploy as preview
+          preview: ${{ github.ref == 'refs/heads/development' }}
+
+      - name: Show deployed URL
+        run: |
+          echo "Deployed URL: ${{ steps.deployment.outputs.page_url }}"
