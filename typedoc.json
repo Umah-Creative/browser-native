@@ -5,22 +5,19 @@
     "packages/react/src/index.ts",
     "packages/types/src/index.ts"
   ],
-  "out": "docs/api",
-  "plugin": ["typedoc-plugin-missing-exports"],
-  "name": "@umah-creative/browser-native",
+  "out": "apps/docs/api",
+  "plugin": ["typedoc-plugin-missing-exports", "typedoc-plugin-markdown"],
+  "name": "Browser Native",
   "includeVersion": true,
   "readme": "README.md",
-  "githubPages": true,
-  "gitRevision": "main",
-  "navigationLinks": {
-    "GitHub": "https://github.com/umah-creative/browser-native",
-    "NPM": "https://www.npmjs.com/org/umah-creative"
-  },
+  "githubPages": false,
   "exclude": [
     "**/*.test.ts",
     "**/*.spec.ts",
     "**/__tests__/**/*",
     "packages/**/__tests__/**/*"
   ],
-  "tsconfig": "./tsconfig.doc.json"
+  "tsconfig": "tsconfig.doc.json",
+  "disableSources": true,
+  "hideBreadcrumbs": true
 }

@@ -39,12 +39,23 @@ export default defineConfig({
       '/api/': [
         {
           text: 'API Reference',
+          link: '/api/README',
           items: [
-            { text: 'Modules', link: '/api/modules' },
-            { text: 'Core', link: '/api/modules/umah_creative_browser_native' },
+            {
+              text: 'Modules',
+              link: '/api/modules',
+            },
+            {
+              text: 'Core',
+              link: '/api/core/src/README',
+            },
             {
               text: 'React',
-              link: '/api/modules/umah_creative_browser_native_react',
+              link: '/api/react/src/README',
+            },
+            {
+              text: 'Types',
+              link: '/api/types/src/README',
             },
           ],
         },
