@@ -1,6 +1,6 @@
 {
   "name": "@umah-creative/browser-native-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React hooks wrapper for browser-native APIs. Provides idiomatic, composable hooks built on top of the core browser-native library.",
   "author": "Ummah Creative",
   "license": "MIT",
