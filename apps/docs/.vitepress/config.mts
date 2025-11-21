@@ -8,6 +8,7 @@ export default defineConfig({
     // @ts-expect-error -- not fully supported yet
     initialValue: 'light',
   },
+  base: '/browser-native/',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
