@@ -1,5 +1,12 @@
 # @umah-creative/browser-native-react
 
+## 0.1.2
+
+### Patch Changes
+
+- Updated dependencies
+  - @umah-creative/browser-native@0.2.0
+
 ## 0.1.1
 
 ### Patch Changes
