@@ -105,4 +105,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
-          publish: pnpm publish
+          publish: pnpm publish-packages
+
+      - name: Create Git tag
+        run: |
+          # Get version from root package.json (or the main package)
+          VERSION=$(node -p "require('./package.json').version")
+          echo "Version: $VERSION"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -a "v$VERSION" -m "Release version $VERSION"
+          git push origin "v$VERSION"
