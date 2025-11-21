@@ -1,0 +1,20 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": [
+    "packages/core/src/index.ts",
+    "packages/react/src/index.ts"
+  ],
+  "out": "docs/api",
+  "plugin": [],
+  "name": "Browser Native",
+  "includeVersion": true,
+  "readme": "README.md",
+  "githubPages": true,
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "**/__tests__/**/*",
+    "packages/**/__tests__/**/*"
+  ],
+  "tsconfig": "tsconfig.doc.json"
+}
