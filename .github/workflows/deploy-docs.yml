@@ -64,8 +64,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Verify build output
-        run: ls -R apps/docs/.vitepress/dist
+      - name: List downloaded artifact contents
+        run: ls -R .
 
       - name: Deploy to GitHub Pages
         id: deployment
