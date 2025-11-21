@@ -99,6 +99,13 @@ jobs:
       - name: Build packages
         run: pnpm build
 
+      - name: Setup npm auth for scoped packages
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+          echo "@umah-creative:registry=https://registry.npmjs.org/" >> ~/.npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Version, Publish & Create Release
         uses: changesets/action@v1
         env:
