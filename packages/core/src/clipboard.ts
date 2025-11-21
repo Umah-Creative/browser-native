@@ -21,3 +21,12 @@ export async function writeClipboardText(
 
   return navigator.clipboard.writeText(text);
 }
+
+/**
+ * Clears the clipboard.
+ */
+export async function clearClipboard(): Promise<void> {
+  if (!navigator.clipboard) throw new Error('Clipboard API not supported');
+
+  return navigator.clipboard.writeText('');
+}

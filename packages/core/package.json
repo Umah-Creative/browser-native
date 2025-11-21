@@ -2,9 +2,32 @@
   "name": "@umah-creative/browser-native",
   "version": "0.1.0",
   "description": "A lightweight, modern TypeScript library that provides a unified interface to browser-native APIs such as Clipboard, Geolocation, Notifications, and more. Fully tree-shakeable, framework-agnostic, and optimized for modern browsers.",
+  "author": "Ummah Creative",
+  "license": "MIT",
+  "homepage": "https://github.com/umah-creative/browser-native/tree/main/packages/core",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umah-creative/browser-native.git",
+    "directory": "packages/browser-native"
+  },
+  "bugs": {
+    "url": "https://github.com/umah-creative/browser-native/issues"
+  },
+  "keywords": [
+    "browser",
+    "browser-native",
+    "typescript",
+    "clipboard",
+    "geolocation",
+    "notifications",
+    "web api",
+    "api wrapper",
+    "frontend"
+  ],
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
+  "sideEffects": false,
   "publishConfig": {
     "access": "public"
   },

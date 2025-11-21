@@ -2,9 +2,36 @@
   "name": "@umah-creative/browser-native-react",
   "version": "0.1.0",
   "description": "React hooks wrapper for browser-native APIs. Provides idiomatic, composable hooks built on top of the core browser-native library.",
+  "author": "Ummah Creative",
+  "license": "MIT",
+  "homepage": "https://github.com/umah-creative/browser-native/tree/main/packages/browser-native-react",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umah-creative/browser-native.git",
+    "directory": "packages/browser-native-react"
+  },
+  "bugs": {
+    "url": "https://github.com/umah-creative/browser-native/issues"
+  },
+  "keywords": [
+    "react",
+    "react-hooks",
+    "browser",
+    "browser-native",
+    "web-api",
+    "typescript",
+    "hooks",
+    "clipboard",
+    "geolocation",
+    "notifications",
+    "frontend",
+    "react-library",
+    "react-utils"
+  ],
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
+  "sideEffects": false,
   "publishConfig": {
     "access": "public"
   },
