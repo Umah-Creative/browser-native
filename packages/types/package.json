@@ -2,7 +2,27 @@
   "name": "@umah-creative/browser-native-types",
   "version": "0.0.0",
   "description": "Shared TypeScript types for @umah-creative/browser-native packages.",
+  "author": "Ummah Creative",
+  "license": "MIT",
+  "homepage": "https://github.com/umah-creative/browser-native/tree/main/packages/browser-native-types",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umah-creative/browser-native.git",
+    "directory": "packages/browser-native-types"
+  },
+  "bugs": {
+    "url": "https://github.com/umah-creative/browser-native/issues"
+  },
+  "keywords": [
+    "typescript",
+    "types",
+    "browser-native",
+    "web-api",
+    "shared-types",
+    "types-lib"
+  ],
   "types": "dist/index.d.ts",
+  "sideEffects": false,
   "publishConfig": {
     "access": "public"
   },

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": [
+    "packages/core/src/index.ts",
+    "packages/react/src/index.ts",
+    "packages/types/src/index.ts"
+  ],
+  "out": "docs/api",
+  "plugin": ["typedoc-plugin-missing-exports"],
+  "name": "@umah-creative/browser-native",
+  "includeVersion": true,
+  "readme": "README.md",
+  "githubPages": true,
+  "gitRevision": "main",
+  "navigationLinks": {
+    "GitHub": "https://github.com/umah-creative/browser-native",
+    "NPM": "https://www.npmjs.com/org/umah-creative"
+  },
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "**/__tests__/**/*",
+    "packages/**/__tests__/**/*"
+  ],
+  "tsconfig": "./tsconfig.doc.json"
+}
