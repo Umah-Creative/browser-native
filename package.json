@@ -2,8 +2,31 @@
   "name": "browser-native",
   "private": true,
   "description": "A modular monorepo containing a core browser-native API toolkit and framework-agnostic wrappers. Fully typed, tree-shakeable, and optimized for modern web applications.",
+  "author": "Ummah Creative <richie@umahcreative.dev>",
+  "license": "MIT",
+  "homepage": "https://github.com/umah-creative/browser-native#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umah-creative/browser-native.git"
+  },
+  "bugs": {
+    "url": "https://github.com/umah-creative/browser-native/issues"
+  },
+  "keywords": [
+    "browser",
+    "typescript",
+    "api",
+    "monorepo",
+    "react",
+    "hooks",
+    "clipboard",
+    "geolocation",
+    "notifications",
+    "web-apis"
+  ],
   "scripts": {
     "build": "pnpm -r run build",
+    "build:docs": "typedoc --logLevel Verbose",
     "dev": "pnpm -r run dev",
     "lint": "eslint . --ext .ts,.tsx",
     "test": "pnpm -r run test",
@@ -17,6 +40,8 @@
     "prettier": "^3.0.0",
     "ts-node": "^10.9.2",
     "tsup": "^8.5.1",
+    "typedoc": "^0.28.14",
+    "typedoc-plugin-missing-exports": "^4.1.2",
     "typescript": "^5.2.0"
   },
   "workspaces": [
