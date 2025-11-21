@@ -1,6 +1,6 @@
 {
   "name": "@umah-creative/browser-native",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A lightweight, modern TypeScript library that provides a unified interface to browser-native APIs such as Clipboard, Geolocation, Notifications, and more. Fully tree-shakeable, framework-agnostic, and optimized for modern browsers.",
   "author": "Ummah Creative",
   "license": "MIT",

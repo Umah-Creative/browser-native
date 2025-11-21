@@ -1,5 +1,11 @@
 # @umah-creative/browser-native
 
+## 0.2.0
+
+### Minor Changes
+
+- added support for localstorage and visibility event listener
+
 ## 0.1.1
 
 ### Patch Changes
