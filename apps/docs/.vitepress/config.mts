@@ -8,13 +8,14 @@ export default defineConfig({
     // @ts-expect-error -- not fully supported yet
     initialValue: 'light',
   },
+  base: '/browser-native/',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/getting-started' },
       { text: 'Core', link: '/core/clipboard' },
       { text: 'React', link: '/react/use-clipboard' },
-      { text: 'API', link: '/api/modules' },
+      { text: 'API', link: '/api/README' },
     ],
 
     sidebar: {
